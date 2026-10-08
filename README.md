@@ -200,10 +200,25 @@ pip install -r requirements.txt
 ```
 
 ### 3. Launch the Application
+
+#### Option A: Streamlit Decision Dashboard
 ```bash
 streamlit run app.py
 ```
 Open **[http://localhost:8501](http://localhost:8501)** in your browser.
+
+#### Option B: Full-Stack Production Architecture (FastAPI + React Vite)
+```bash
+# Terminal 1: Launch FastAPI REST API Backend
+uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --reload
+
+# Terminal 2: Launch React 18 + Tailwind Frontend
+cd frontend
+npm install
+npm run dev
+```
+* **Frontend Dashboard**: **[http://localhost:5173](http://localhost:5173)**
+* **Interactive API Swagger Docs**: **[http://localhost:8000/docs](http://localhost:8000/docs)**
 
 ---
 

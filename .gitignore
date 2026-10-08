@@ -44,3 +44,18 @@ desktop.ini
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node / Frontend
+node_modules/
+.npm/
+dist/
+.vite/
+
+# Database & local secrets
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.local
+.env.*.local
+
